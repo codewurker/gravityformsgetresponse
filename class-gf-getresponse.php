@@ -150,6 +150,15 @@ class GFGetResponse extends GFFeedAddOn {
 	protected $api = null;
 
 	/**
+	 * Enabling background feed processing to prevent performance issues delaying form submission completion.
+	 *
+	 * @since 1.8
+	 *
+	 * @var bool
+	 */
+	protected $_async_feed_processing = true;
+
+	/**
 	 * Get instance of this class.
 	 *
 	 * @since  1.0
